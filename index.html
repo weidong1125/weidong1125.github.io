@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>我的主页</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/zb.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu: '#menu'
+	});
+});
+/*划入图片变大*/
+$(function(){
+		$(".img").mouseover(function(){
+			$(this).animate({"width":"120px"},300);
+			}).mouseout(function(){
+			$(this).animate({"width":"100px"},300);
+		})
+	})
+$(function(){
+	$(".logo_p").mouseover(function(){
+		$(this).children(".intro_1").text("Resume").siblings().text("前端工程师");}).mouseout(function(){
+		$(this).children(".intro_1").text("F2E").siblings().text("个人简历");})
+	})
+</script>
+</head>
+
+<body>
+<div id="menu">
+<div class="logo">
+	<div><img class="logo_img" src="img/logo.jpg"></div>
+	<div class="logo_p">
+		<p class="intro_1" >F2E</p>	
+		<p class="intro_2" >个人简历</p>
+	</div>
+</div><!-- logo -->
+<ul class="nav">
+	<li data-menuanchor="page1" class="active"><a href="#page1">我的主页</a></li>
+	<li data-menuanchor="page2"><a href="#page2">个人介绍</a></li>
+	<li data-menuanchor="page3"><a href="#page3">专业技能</a></li>
+	<li data-menuanchor="page4"><a href="#page4">联系方式</a></li>
+</ul>
+</div><!-- 导航部分 -->
+
+<div id="dowebok">
+	<div class="section" id="section01">
+		<div><img class="myphoto" src="img/me.jpg"></div>
+		<p class="motto">生活是一种绵延不绝地渴望，渴望不断上升，变得更伟大而高贵。</p>
+		
+		<div class="intro"><p>我叫魏栋<br><br>23岁<br><br>
+		一名前端研发工程师 <br><br>weidong_716@163.com	</p>
+		</div>
+	</div>
+	<div class="section" id="section02">
+		<div class="about_me">
+			<h3>关于我</h3>
+			<p>- ABOUT ME -</p>
+		</div>
+		<div class="about_content">
+			<div class="about_list">
+				<div class="about_img"><img src="img/content_1.jpg" alt="">
+				<div class="sj"></div>
+				<p>燕山大学</p></div>
+			</div>
+			<div class="about_list">
+				<div class="about_img"><img src="img/content_2.jpg" alt="">
+				<div class="sj"></div>
+				<p>25岁/男</p></div>
+			</div>
+			<div class="about_list">
+				<div class="about_img"><img src="img/content_3.jpg" alt="">
+				<div class="sj"></div>
+				<p>秦皇岛</p></div>
+			</div>
+			<div class="about_list">
+				<div class="about_img"><img src="img/content_4.jpg" alt="">
+				<div class="sj"></div>
+				<p>状态/求职</p></div>
+			</div>
+		</div>
+
+		<div class="about_intro">
+			<div class="one"></div>
+			<p>现在在燕山大学读大四，对前端有着浓厚的兴趣<br> <br>喜欢遨游在代码的世界里，看着由代码组成各种各样秒不可及的风景<br><br>欲就职于北京或者杭州 <br> <br>能在自己喜欢的城市敲着可爱的代码想来也是无比幸福的事情</p>
+			<div class="two"></div>
+		</div>
+	</div>
+
+	<div class="section" id="section03">
+		<div class="skill">
+			<h3>专业技能</h3>
+			<p>-  SKILL  -</p>
+		</div>
+		<div class="skill_content">
+			<div class="skill_list">
+			<div class="box-img"><img class="img" src="img/ng.png"></div>
+			<p>AngularJs</p><img src="img/skill_flag.png">
+			<div class="skill_text">
+			<ul>
+				<li>熟练运用angularJS处理移动端的模块开发
+				模块组件化</li>
+				<li>了解双绑的背后实现</li>
+				<li>掌握bootstrap框架及源码的实现</li>
+				<li>熟练的指令编写</li>
+			</ul></div>
+			</div>
+
+			<div class="skill_list">
+			<div class="box-img"><img class="img" src="img/html.png"></div><p>HTML</p><img src="img/skill_flag.png">
+			<div class="skill_text">
+			<ul>
+				<li>深刻理解Web标准</li>
+				<li>熟练运用html标签</li>
+				<li>熟悉xml及xhtml标记语言</li>
+				<li>掌握html5如SVG，localstorage新特性</li>
+			</ul></div>
+			</div>
+
+			<div class="skill_list">
+			<div class="box-img"><img class="img" src="img/css.png"></div><p>CSS</p><img src="img/skill_flag.png">
+			<div class="skill_text">
+			<ul>
+				<li>熟练运用css及css3新属性<li>注重浏览器兼容性，熟悉常见的css hack（兼容至IE8）</li>
+				<li>掌握bootstrap框架及源码的实现</li>
+				<li>掌握css预编译器Less及Sass</li>
+			</ul></div>
+			</div>
+
+			<div class="skill_list">
+			<div class="box-img"><img class="img" src="img/js.png"></div><p>JS</p><img src="img/skill_flag.png">
+			<div class="skill_text">
+			<ul>
+				<li>掌握jQuery</li>
+				<li>掌握原生JS的编程</li>
+				<li>注重JavaScript性能优化</li>
+				<li>正在学习ES6</li>
+			</ul></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section04">
+		<div class="section04">
+			<div class="contact_me">
+				<h3>联系我</h3>
+				<p>- CONTACT ME -</p>
+			</div>
+			<div class="future">
+				<p>灵感 代码 梦想 未来</p>
+				<p><span class="a">INSPIRATION</span>&nbsp; <span class="b">CODE</span>&nbsp; <span class="c">DREAM </span>&nbsp;<span class="d">FUTURE</span></p>
+			</div>
+			
+			<div class="footer">
+				<div><a href="https://github.com/weidong1125">Github</a>&nbsp;<a href="http://mail.163.com">邮箱</a></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<canvas id="c1" width="400" height="400">
+</canvas> <!--默认：宽300  高150-->
+
+
+
+</body>
+</html>

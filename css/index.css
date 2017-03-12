@@ -1,0 +1,248 @@
+body,ul,h3,p{margin: 0; padding: 0;list-style: none;}
+.section { text-align: center; font-size: 30px; color: #000;}
+#section01{
+	background-image: url(../img/bg1.jpg);
+}
+#section02{
+	background-image: url(../img/bg2.jpg);
+}
+#section03{
+	background-image: url(../img/bg3.jpg);
+}
+#section04{
+	background-image: url(../img/bg4.jpg);
+}
+#c1{
+	position: fixed;
+	top: -156px;
+	right: -130px;
+	}
+#menu {  position: fixed; left: 0px; top: 0px;
+	z-index: 1; 
+	width:100%;
+	background: rgba(204,204,204, 0.5);
+	padding-bottom: 8px;}
+#menu .logo{
+	margin:10px 0px;
+	font-size: 16px;
+}
+#menu .logo_img{
+	margin-left: 40px;
+	width: 70px;height: 70px;
+	border-radius:25px;
+	float: left;
+}
+#menu .logo_p{
+	margin: 0px 20px;
+	text-align: center;
+	float: left;
+	font-size: 20px;
+}
+#menu .intro_1{
+	margin: 10px 15px 5px;
+    width: 80px;
+    border-bottom: 1px solid #333;
+    font:22px 黑体;
+    font-weight: 300;
+}
+#menu .intro_2{
+	font-size: 18px;
+	padding: 0 15px;
+}
+#menu .nav{
+	float: right;
+	margin: 20px 130px 0px 0px;
+}
+.nav li{
+	float: left; 
+	margin:  0 10px 0 0; 
+	font-size: 14px;
+	border-radius: 10px;
+}
+.nav a { float: left; padding: 10px 20px;
+ 		background-color: #fff; 
+ 		color: #333; 
+ 		text-decoration: none;
+     	border-radius: 12px;}
+.nav .active a { color: #fff; background-color: #333;}
+
+#dowebok .myphoto{
+	width: 150px;height:150px;
+	border-radius: 150px;
+}
+#section01 p.motto{
+	font-size: 25px;
+	font-weight: bold;
+	width: 60%;
+	margin: 30px auto;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+}
+#section01 .intro{
+	font-family: arial, helvetica, sans-serif;
+}
+/* section02 */
+.about_me {
+	margin-top: 120px;
+	margin-bottom: 20px;
+}
+.about_me p{
+	width: 10%;
+	margin: 0 auto;
+	border-top: 2px solid #f00;
+	font-size:20px;
+	color: #f00;
+}
+.about_content{
+	width: 900px;
+	height: 210px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: center;
+	background: #A0A0B4;
+	alpha(opacity=90); opacity: 0.9;
+	border-radius: 30px;
+}
+.about_list{
+	float: left;
+	width: 25%;
+	font-size: 22px;
+}
+.about_img img{
+	margin-top: 20px;
+	width: 50%;
+}
+.sj{
+	margin-top: 8px;
+	margin-left: 100px;
+			width: 0px;
+			height: 0px;
+			overflow: hidden;
+			border-width: 13px;
+			/*兼容IE6*/
+			border-color: #fff transparent transparent transparent;
+			border-style: solid dashed dashed dashed;
+			/*	三角方向	下	  左     上  	右 --*/
+		}
+.about_intro{
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 25px;
+	font-weight: 300;
+}
+.one{
+	margin-bottom: -60px;
+	width: 80px;
+	height:80px;
+	border-top:2px solid #5686D6; 
+	border-left:2px solid #5686D6; 
+}
+.two{
+	float: right;
+	margin-top: -60px;
+	width: 80px;
+	height: 80px;
+	border-bottom:2px solid #5686D6; 
+	border-right:2px solid #5686D6; 
+}
+/* #section03 */
+.skill{
+	margin: 0px 0 50px 0;
+}
+.skill p{
+	width: 10%;
+	margin: 0 auto;
+	border-top: 2px solid #f00;
+	font-size:20px;
+	color: #f00;
+}
+.skill_content{
+	width: 1400px;
+	margin: 0 100px;
+	overflow: hidden;
+	margin-left: 200px;
+}
+.skill_list{
+	float: left;
+}
+.skill_list .box-img{
+	width: 120px;
+	height: 140px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.skill_list .img{
+	width: 100px;
+}
+.skill_list p{
+	font-size:22px;
+}
+.skill_text{	
+	font-size: 16px;
+	text-align: left;
+	width: 290px;
+	border-radius: 20px;
+	background: #ccc;
+	overflow: hidden;
+	margin: 20px 10px 0 0;
+	padding-left: 30px;
+}
+.skill_text ul{list-style:  disc;}
+.skill_text li{line-height: 30px;}
+/* section04 */
+.section04{
+	border:2px dashed #090;
+	border-radius: 30px;
+	width: 800px;
+	height: 500px;
+	margin-left: 100px;
+}
+.contact_me{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	line-height: 60px;
+}
+.contact_me p{
+	width: 40%;
+	margin: 0 auto;
+	border-top: 2px solid #f00;
+	font-size:20px;
+	color: #e00;
+}
+.future{
+	font-size: 30px;
+}
+.future p{
+	line-height: 60px;
+}
+.future .a{
+	color: #f00;
+}
+.future .b{
+	color: #33CCFF;
+}
+.future .c{
+	color: #66CC00;
+}
+.future .d{
+	color: #090;
+}
+.footer{
+	width: 47%;
+	position: absolute;
+	bottom: 180px;
+	left: 100px;
+	border-top: 1px dashed #099;
+}
+.footer a{
+	text-decoration: none;
+	font-size: 16px;
+}
+.footer div div{
+	float: left;
+	border-right: 1px solid #009;
+}
+
+
+
+
